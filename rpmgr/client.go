@@ -3,9 +3,9 @@ package rpmgr
 import (
 	"net/url"
 
+	"github.com/aocole/go-swagger-test/client"
+	"github.com/aocole/go-swagger-test/client/iaas_resources"
 	httpKitClient "github.com/go-openapi/runtime/client"
-	"github.com/hpcloud/test/client"
-	"github.com/hpcloud/test/client/iaas_resources"
 )
 
 // UploadIAASResources upload the iaas resource to rpmgr.
