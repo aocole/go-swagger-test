@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  title: Resource Policy Manager
+  title: Client panic test
 paths:
   /v1/iaasresources:
     post:
@@ -14,8 +14,3 @@ paths:
         in: body
         schema:
           type: string
-      responses:
-        '200':
-          description: Succeeded
-        default:
-          description: Error

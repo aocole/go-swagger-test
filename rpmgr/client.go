@@ -15,6 +15,6 @@ func UploadIAASResources(targetURL *url.URL, iaasResources string) error {
 	rpmgrClient := client.New(transport, nil)
 
 	params := iaas_resources.NewUploadIAASResourcesParams().WithIaasResources(&iaasResources)
-	_, err := rpmgrClient.IaasResources.UploadIAASResources(params)
+	err := rpmgrClient.IaasResources.UploadIAASResources(params)
 	return err
 }
