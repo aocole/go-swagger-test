@@ -1,0 +1,21 @@
+swagger: "2.0"
+info:
+  title: Resource Policy Manager
+paths:
+  /v1/iaasresources:
+    post:
+      tags: ["iaasResources"]
+      operationId: uploadIAASResources
+      consumes:
+      - text/plain
+      parameters:
+      - name: "iaasResources"
+        required: true
+        in: body
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Succeeded
+        default:
+          description: Error
